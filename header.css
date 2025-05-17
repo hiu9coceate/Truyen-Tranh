@@ -11,6 +11,10 @@ body{
     
 }
 
+.logoa{
+    margin-top: auto;
+}
+
 .menu > button{
     border: none;
     background: none;
@@ -24,7 +28,7 @@ body{
 }
 
 .hai > div > a:hover{
-    color: #3b82f6;
+    color: #ff69b4;
     transform: scale(1.1);
     /* simulate bold appearance without causing reflow */
     text-shadow: 0px 0px 1px currentColor, 0px 0px 1px currentColor;
@@ -79,7 +83,7 @@ li {
     transition: background-color 0.3s, color 0.3s, text-shadow 0.3s;
 }
 .menuL li a:hover {
-    background-color: #3b82f6;
+    background-color: #ff69b4;
     color: #fff;
     transform: scale(1.1);
     /* simulate bold appearance without causing reflow */
@@ -99,7 +103,7 @@ li {
 }
 
 .search > button {
-    background-color: #3b82f6;
+    background-color: #ff69b4;
     border: none;
     color: white;
     padding: 5px 10px;
@@ -110,7 +114,7 @@ li {
 
 .s2{
     display: none;
-    background-color: #3b82f6;
+    background-color: #ff69b4;
     border: none;
     color: white;
     padding: 5px 10px;
@@ -119,38 +123,12 @@ li {
     margin-left: 5px;
 }
 
-#oss1 {
-    /* Style bạn cung cấp */
-    position: absolute;
-    top: 4rem;        /* Khoảng 64px từ top */
-    left: 50%;        /* Đặt điểm bắt đầu ở giữa chiều ngang */
-    border: 1px solid #ccc;
-    padding: 1.5rem;    /* Giảm padding một chút cho cân đối */
-    width: 80vw;      /* Rộng 80% khung nhìn */
-    max-width: 500px; /* Giới hạn chiều rộng tối đa */
-    border-radius: 1rem; /* Bo góc */
-    background-color: white; /* Nền trắng để che nội dung dưới */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15); /* Đổ bóng nhẹ */
-    z-index: 100;      /* Đảm bảo nằm trên các phần tử khác */
 
-    /* ----- Thuộc tính cho hiệu ứng ----- */
-    /* Trạng thái ẩn ban đầu */
-    opacity: 0;                         /* Mờ hoàn toàn */
-    visibility: hidden;                 /* Ẩn hoàn toàn, không tương tác được */
-    transform: translateX(-50%) translateY(-20px); /* Căn giữa ngang (-50% width) và dịch lên trên 20px */
-    transition: opacity 0.3s ease-out, transform 0.3s ease-out, visibility 0.3s;
-    /*
-        - opacity: Thời gian hiệu ứng mờ là 0.3s
-        - transform: Thời gian hiệu ứng trượt là 0.3s
-        - visibility: Thời gian hiệu ứng ẩn/hiện là 0.3s (để khớp với opacity)
-        - ease-out: Kiểu hiệu ứng (nhanh lúc đầu, chậm dần về cuối)
-    */
-}
 
 #oss1 {
     position: absolute;
-    top: 4rem;
-    left: 50%;
+    top: 5rem;
+    left: 55%;
     border: 1px solid #ccc;
     padding: 1.5rem;
     width: 80vw;
@@ -191,7 +169,7 @@ li {
 }
 
 #oss1 > div > button {
-    background-color: #3b82f6;
+    background-color: #ff69b4;
     border: none;
     color: white;
     padding: 8px 15px;
@@ -214,7 +192,8 @@ li {
     padding: 2rem;
     border: 1px solid #ccc;
     height: 100%;
-    background-color: #EEEEEE;
+    background-color: #ff69b4b5;
+    color: white;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     opacity: 0;
@@ -226,6 +205,16 @@ li {
                 opacity 0.3s ease-out,
                 visibility 0s linear 0.3s; /* Delay visibility khi ẩn */
 }
+
+.btnmenu > svg
+{
+    color: #f31e88;
+}
+
+.menu1 > div > a{
+    color: white;
+}
+
 .menu1.visible {
     opacity: 1;
     visibility: visible;
@@ -238,7 +227,7 @@ li {
         font-size: 14px;
     }
     .menuL {
-        width: 100%;
+        width: 25%;
     }
     .search  {
         display: none;
@@ -247,6 +236,16 @@ li {
     .s2
     {
         display: block;
+    }
+
+    .h1{
+        width: 10%;
+    }
+
+    .logoa > svg
+    {
+        width: 100%;
+        height: 100%;
     }
 
    
@@ -269,7 +268,7 @@ li {
     }
 
     .search > input {
-        width: 80%;
+        width: 70%;
     }
 
     .s2{
@@ -280,7 +279,15 @@ li {
         padding: 10px;
     }
 
-    
+    .h1{
+        width: 60%;
+    }
+
+    .logoa > svg
+    {
+        width: 100%;
+        height: 100%;
+    }
 
 }
 
@@ -296,6 +303,15 @@ li {
         padding: 10px;
     }
 
-   
+    .h1
+    {
+        width: 45%;
+    }
+
+   .logoa > svg
+   {
+    width: 70%;
+    height: 70%;
+   }
     
 }
