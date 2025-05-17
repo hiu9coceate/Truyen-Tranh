@@ -294,7 +294,14 @@ li {
 @media screen and (max-width: 450px) {
     .search > input {
         width: 70%;
+        height: 70%;
     }
+
+    .search > button {
+        width: 20%;
+        height: 5%;
+    }
+    
     .logo{
         margin-right: 10vw;
     }
